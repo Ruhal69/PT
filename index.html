@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Task Tracker</h1>
+        <h2>Daily Tasks</h2>
+        <div class="section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Study Rate</th>
+                        <th>Complete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="subject">SST</td>
+                        <td>2 chapters every 3 days</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="sst" class="checkbox">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">Maths</td>
+                        <td>1 chapter every 4 days</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="maths" class="checkbox">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">Science</td>
+                        <td>1 chapter every 4 days</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="science" class="checkbox">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">English</td>
+                        <td>1 chapter every 2 days</td>
+                        <td>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="english" class="checkbox">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="resetButton">Reset Tasks</button>
+        <div id="celebration" style="display: none; text-align: center; font-size: 2em; color: #ff00ff;">🎉 Congratulations! You've completed your tasks! 🎉</div>
+        <div id="confetti"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    width: 100%;
+}
+
+h2 {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.section {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    margin: 10px;
+    flex-grow: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #00ffff;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00ffff;
+    color: #1a1a1a;
+}
+
+.subject {
+    font-weight: bold;
+    color: #ff00ff;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+    accent-color: #00ffff;
+    width: 24px;
+    height: 24px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ffff;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #00cccc;
+}
+
+/* Confetti Styles */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    opacity: 0.9;
+    animation: fall 1s forwards;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+/* Cone shape confetti animation */
+@keyframes shoot {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(calc(-50vw + 50%));
+        opacity: 0;
+    }
+}
